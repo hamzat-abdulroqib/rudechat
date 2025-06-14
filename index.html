@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switchable ChatBot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="header">
+        <span>ChatBot 💬</span>
+        <label class="mode-toggle">
+          <input type="checkbox" id="modeSwitch" />
+          <span class="slider"></span>
+          <span class="label-text">Rude 😡</span>
+        </label>
+      </div>
+
+      <div class="messages" id="messages"></div>
+
+      <div class="input-container">
+        <input type="text" id="userInput" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
